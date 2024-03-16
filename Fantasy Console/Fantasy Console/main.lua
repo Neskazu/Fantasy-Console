@@ -1,7 +1,9 @@
 function Load()
     num = 10
     step=1;
+    isInit=false
     print("Lua inited!")
+
 end
 
 function Update()
@@ -11,6 +13,17 @@ function Update()
 end
 
 function Draw()
-    DrawCircle(400, 225, num, 1)
-    DrawCircle(1, 1, 140, 2)
+    PlaceSprite("Textures/grass03.png",200+num,200,50,50)
+    --tilemap draw
+    for i=0,8 do
+        for u=0,8 do
+            PlaceTile("Textures/tile007.png",i,u)
+        end
+    end
+    for i=300,500 do
+        for u=100,300 do
+            DrawPixel(i,u,5)
+        end
+    end
+    
 end

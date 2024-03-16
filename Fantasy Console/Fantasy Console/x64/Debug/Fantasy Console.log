@@ -1,4 +1,2 @@
 ﻿  Main.cpp
-C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\Main.cpp(40,36): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
-C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\Main.cpp(40,36): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   Fantasy Console.vcxproj -> C:\Users\erikf\source\repos\Fantasy Console\x64\Debug\Fantasy Console.exe
