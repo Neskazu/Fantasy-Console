@@ -1,2 +1,29 @@
-﻿  Main.cpp
+﻿  GraphicLua.cpp
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(14,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(15,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(16,16): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(17,20): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(21,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(28,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(29,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(30,20): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(40,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(41,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(65,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(66,11): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(67,15): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(68,16): warning C4244: 'initializing': conversion from 'lua_Integer' to 'int', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(70,33): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(70,33): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(70,40): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(70,40): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,28): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,31): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,34): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,34): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,41): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\erikf\source\repos\Fantasy Console\Fantasy Console\GraphicLua.cpp(71,41): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Fantasy Console.vcxproj -> C:\Users\erikf\source\repos\Fantasy Console\x64\Debug\Fantasy Console.exe

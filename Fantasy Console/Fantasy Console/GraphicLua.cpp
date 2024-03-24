@@ -8,7 +8,7 @@
 const int gridSize = 32; // tilemap size 
 const int tileSize = 16; // tile size x,y
 
-std::unordered_map<std::string, Texture2D> textureCache;
+std::unordered_map<std::string, Texture2D> textureCache;//ingame cache
 
 int LuaDrawCircle(lua_State* L) {
     int x = luaL_checkinteger(L, 1); // Get args from lua
@@ -16,7 +16,7 @@ int LuaDrawCircle(lua_State* L) {
     int radius = luaL_checkinteger(L, 3);
     int colorIndex = luaL_checkinteger(L, 4);
 
-    // Check isvalid
+    // Check is color in base Colors
     if (colorIndex >= 0 && colorIndex < Colors::numBaseColors) {
         DrawCircle(x, y, radius, Colors::baseColors[colorIndex]); // Draw call
     }
@@ -28,6 +28,7 @@ int LuaDrawPixel(lua_State* L)
     int x = luaL_checkinteger(L, 1); // Get args from lua
     int y = luaL_checkinteger(L, 2);
     int colorIndex = luaL_checkinteger(L, 3);
+    // Check is color in base Colors
     if (colorIndex >= 0 && colorIndex < Colors::numBaseColors) {
         DrawPixel(x, y,Colors::baseColors[colorIndex]); // Draw call
     }
@@ -39,7 +40,7 @@ int LuaPlaceTile(lua_State* L)
     std::string path = luaL_checkstring(L, 1); // Get args from lua
     int x = luaL_checkinteger(L, 2);
     int y = luaL_checkinteger(L, 3);
-    // check texture in cache
+    //check is texture in cache
     auto it = textureCache.find(path);
     if (it == textureCache.end())
     {
@@ -70,7 +71,7 @@ int LuaPlaceSprite(lua_State* L)
     Rectangle srcRect = { 0, 0, width, height };
     Rectangle destRect = { x, y, width, height };
     Vector2 origin = { 0, 0 };
-    
+    //check is texture in cache
     auto it = textureCache.find(path);
     if (it == textureCache.end())
     {
@@ -88,7 +89,5 @@ int LuaPlaceSprite(lua_State* L)
         //draw
         DrawTexturePro(it->second, srcRect, destRect, origin, 0, WHITE);
     }
-
-
     return 0;
 }
