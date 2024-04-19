@@ -3,7 +3,7 @@ function Load()
     step=1;
     isInit=false
     print("Lua inited!")
-
+    LoadTileSet("Textures/Grass.png")
 end
 
 function Update()
@@ -13,17 +13,12 @@ function Update()
 end
 
 function Draw()
-    PlaceSprite("Textures/grass03.png",200+num,200,50,50)
-    --tilemap draw
-    for i=0,8 do
-        for u=0,8 do
-            PlaceTile("Textures/tile007.png",i,u)
-        end
-    end
-    for i=300,500 do
-        for u=100,300 do
-            DrawPixel(i,u,5)
-        end
-    end
+    SetTile(0,0,0)
+    SetTile(1,0,1)
+    SetTile(2,0,2)
+    SetTile(0,1,7)
+    SetTile(1,1,8)
+    SetTile(2,1,9)
+    RenderTileMap()
     
 end

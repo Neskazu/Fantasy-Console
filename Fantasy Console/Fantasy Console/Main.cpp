@@ -14,10 +14,9 @@ int main(int argc, char* argv[]) {
 
     // Init lua + lua func
     lua.Init();
-    lua.Reg_function(LuaDrawCircle, "DrawCircle"); // Func register
-    lua.Reg_function(LuaPlaceSprite, "PlaceSprite");
-    lua.Reg_function(LuaPlaceTile, "PlaceTile");
-    lua.Reg_function(LuaDrawPixel, "DrawPixel");
+    lua.Reg_function(LuaLoadTileSet, "LoadTileSet"); // Func register
+    lua.Reg_function(LuaSetTile, "SetTile");
+    lua.Reg_function(LuaRenderTileMap, "RenderTileMap");
 
     lua.Open("main.lua");
     lua.Call_load();
