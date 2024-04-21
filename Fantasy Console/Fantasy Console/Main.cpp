@@ -14,33 +14,21 @@ int main(int argc, char* argv[]) {
 
     // Init lua + lua func
     lua.Init();
-    lua.Reg_function(LuaDrawCircle, "DrawCircle"); // Func register
+    lua.Reg_function(LuaLoadTileSet, "LoadTileSet"); // Func register
+    lua.Reg_function(LuaSetTile, "SetTile");
+    lua.Reg_function(LuaRenderTileMap, "RenderTileMap");
 
     lua.Open("main.lua");
     lua.Call_load();
-    //test tiles
-    Image image = LoadImage("Resources/Textures/grass03.png");     // Loaded in CPU memory (RAM)
-    Texture2D texture = LoadTextureFromImage(image);          // Image converted to texture, GPU memory (VRAM)
-    UnloadImage(image);
-    //test
     // Main Loop
     while (!WindowShouldClose()) {
         // Update
         lua.Call_update();
 
         // Draw
+        ClearBackground(DARKGRAY);
         BeginDrawing();
-        ClearBackground(RAYWHITE);
         lua.Call_draw();
-        //draw tile
-        Rectangle srcRect = { 0, 0, 50, 50 };
-        Vector2 origin = { 0, 0 };
-        for (int i = 0; i < 500; i += 50)
-        {
-            Rectangle destRect = { i, 0, 50, 50 };
-            DrawTexturePro(texture, srcRect, destRect, origin, 0, WHITE);
-        }
-        
         EndDrawing();
     }
 

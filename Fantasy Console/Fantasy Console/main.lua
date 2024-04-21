@@ -1,7 +1,9 @@
 function Load()
     num = 10
     step=1;
+    isInit=false
     print("Lua inited!")
+    LoadTileSet("Textures/Grass.png")
 end
 
 function Update()
@@ -11,6 +13,12 @@ function Update()
 end
 
 function Draw()
-    DrawCircle(400, 225, num, 1)
-    DrawCircle(1, 1, 140, 2)
+    SetTile(0,0,0)
+    SetTile(1,0,1)
+    SetTile(2,0,2)
+    SetTile(0,1,7)
+    SetTile(1,1,8)
+    SetTile(2,1,9)
+    RenderTileMap()
+    
 end
