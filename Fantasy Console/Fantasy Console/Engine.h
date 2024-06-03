@@ -28,6 +28,10 @@ public:
 			lua_settop(lua_state, 0);
 		}
 	}
+	lua_State* GetLuaState()
+	{
+		return lua_state;
+	}
 	void Open(const char* filename) // открываем файл с кодом (main.lua)
 	{
 		luaL_openlibs(lua_state);
@@ -66,6 +70,13 @@ public:
 	{
 		lua_pushcfunction(lua_state, value);
 		lua_setglobal(lua_state, name);
+	}
+	void Reg_metatable(lua_State* L, lua_CFunction value, const char* name, const char* type) {
+		luaL_newmetatable(L, name);
+		lua_pushcfunction(L, value);
+		lua_setfield(L, -2, type);
+		lua_pushvalue(L, -1);
+		lua_setfield(L, -2, "__index");
 	}
 	int Get_int(int index) // берем числовой аргумент из функции
 	{
