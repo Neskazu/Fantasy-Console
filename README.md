@@ -1,4 +1,4 @@
-# Fantasy-Console
+# 🎮Fantasy-Console🎮
 
 Fantasy-Console is a Lua-powered game engine that allows you to create and render 2D tile-based games. This project includes various APIs to manage tiles, textures, input, and physics, providing a comprehensive toolset for game development.
 
