@@ -4,11 +4,18 @@
 const int gridSize = 32; // tilemap size 
 const int tileSize = 16; // tile size x,y
 const int tileSetSize = 16;//tiles in row collumn
+//tiles
+struct Tile {
+    int tileId;
+    int textureId;
+};
 
 //tiles
-int* tileMap;
+Tile* tileMap;
 Texture2D tileSet;
+//textures
 Texture2D* textures;
+int textureId = 0;
 
 //extra init
 Rectangle srcRect = { 0, 0, 0, 0 };
@@ -16,7 +23,8 @@ Rectangle dstRect = { 0, 0, 0, 0 };
 Vector2 pos = { 0, 0 };
 
 //memory pool
-MemoryPool* memoryPool = MemoryPool::getInstance(40096);;
+MemoryPool* memoryPool = MemoryPool::getInstance(40096);
+
 int LuaDrawText(lua_State* L)
 {
     const char* text = luaL_checkstring(L, 1);
@@ -41,13 +49,14 @@ int LuaLoadTexture(lua_State* L)
 
 
     textures = memoryPool->Allocate<Texture2D>(targetAddress);
-   textures[0] = texture;
-   std::cout <<"\n\n\n" << sizeof(texture) << "\n";
+    textures[textureId] = texture;
+    textureId++;
     UnloadImage(image);
-
     return 0;
 
 }
+
+
 int LuaDrawTexture(lua_State* L)
 {
     int num_args = lua_gettop(L);//get args count 
@@ -116,20 +125,16 @@ int LuaDrawTexture(lua_State* L)
     return 0;
 }
 
-int LuaLoadTileSet(lua_State* L)
-{
-    std::string path = luaL_checkstring(L, 1); // Get args from lua
-    Image image = LoadImage(("Resources/" + path).c_str());     // Loaded in CPU memory (RAM)
-    Texture2D texture = LoadTextureFromImage(image);          // Image converted to texture, GPU memory (VRAM)
-    UnloadImage(image);
-    tileSet = texture;
-    tileMap = memoryPool->Allocate<int>(memoryPool->GetMemoryBlock(), gridSize * gridSize);
 
+int LuaInitializeTileMap(lua_State* L)
+{
+    tileMap = memoryPool->Allocate<Tile>(memoryPool->GetMemoryBlock(), gridSize * gridSize);
     //clear tilemap
-    for (int i = 0; i < gridSize*gridSize; i++)
+    for (int i = 0; i < gridSize * gridSize; i++)
     {
-       tileMap [i] = -1;
-        
+        tileMap[i].tileId = -1;
+        tileMap[i].textureId = -1;
+
     }
     return 0;
 }
@@ -138,7 +143,9 @@ int LuaSetTile(lua_State* L)
     int x = luaL_checkinteger(L, 1); // Get args from lua
     int y = luaL_checkinteger(L, 2);
     int tileindex= luaL_checkinteger(L, 3);
-    tileMap[y*gridSize+x] = tileindex;
+    int textureId = luaL_optinteger(L, 4, 0);
+    tileMap[y*gridSize+x].tileId = tileindex;
+    tileMap[y * gridSize + x].textureId = textureId;
     return 0;
 }
 
@@ -150,17 +157,18 @@ int  LuaRenderTileMap(lua_State* L)
         for (int x = 0; x < gridSize; x++)
         {
             
-            int tileIndex = tileMap[y*gridSize+x];
+            int tileIndex = tileMap[y*gridSize+x].tileId;
+            Texture2D texture = textures[tileMap[y * gridSize + x].textureId];
 
             if (tileIndex >= 0)
             {
                 srcRect.width = tileSize;
                 srcRect.height = tileSize;
-                srcRect.x = (tileIndex*tileSize)% tileSet.width;
-                srcRect.y = tileIndex*tileSize/tileSet.width*tileSize;
+                srcRect.x = (tileIndex*tileSize)% texture.width;
+                srcRect.y = tileIndex*tileSize/texture.width*tileSize;
                 pos.x = x * tileSize;
                 pos.y = y * tileSize;
-                DrawTextureRec(tileSet, srcRect, pos, RED);
+                DrawTextureRec(texture, srcRect, pos, WHITE);
             }
         }
     }
