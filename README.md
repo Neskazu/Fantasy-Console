@@ -80,29 +80,27 @@ local collision = CheckCollisionRecs(px,py, x, y, width, height)
 - returns boolean
 ### QOL
 #### CreateVector2
+Creates a new Vector2 object.
 ```sh
 local vector = CreateVector2(x, y)
 ```
-Creates a new Vector2 object.
-# Fantasy-Console
-## Tiles
-### InitializeTileMap
-### SetTile
-### RenderTileMap
-## Textures
-### LoadTexture
-### DrawTexture
-### Input
-##GetVirtualJoystick
-##GetVirtualMouse
-##GetDeltaTime
-##Physic
-### CheckCollisionRecs
-### CheckCollisionCircles
-### CheckCollisionPointRec
-## QOL 
-### CreateVector2
-Vector2:Get
-Vector2:Set
-### DrawTriangle
+#### Vector2:Set
+Sets the value of a Vector2 component.
+```sh
+vector:set(x,y)
+```
+#### Vector2:Get
+Gets the value of a Vector2.
+```sh
+local x,y = vector:get
+```
+#### DrawTriangle
+Draws a triangle on the screen using three vectors.
+```sh
+DrawTriangle(v1, v2, v3, colorId)
+```
+-'v1' (Vector2): The first vertex of the triangle.
+-'v2' (Vector2): The second vertex of the triangle.
+-'v3' (Vector2): The third vertex of the triangle
+-'colorId' (int): The color ID for the triangle.
 
