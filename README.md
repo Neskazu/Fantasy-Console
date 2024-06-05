@@ -99,8 +99,8 @@ Draws a triangle on the screen using three vectors.
 ```sh
 DrawTriangle(v1, v2, v3, colorId)
 ```
--'v1' (Vector2): The first vertex of the triangle.
--'v2' (Vector2): The second vertex of the triangle.
--'v3' (Vector2): The third vertex of the triangle
--'colorId' (int): The color ID for the triangle.
+- 'v1' (Vector2): The first vertex of the triangle.
+- 'v2' (Vector2): The second vertex of the triangle.
+- 'v3' (Vector2): The third vertex of the triangle
+- 'colorId' (int): The color ID for the triangle.
 
