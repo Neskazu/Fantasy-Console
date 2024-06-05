@@ -59,7 +59,31 @@ Gets the time elapsed since the last frame.
 ```sh
 local deltaTime = GetDeltaTime()
 ```
-
+### Phusics
+#### CheckCollisionRecs
+Checks for a collision between two rectangles.
+```sh
+local collision = CheckCollisionRecs(x1, y1, width1, height1, x2, y2, width2, height2)
+```
+- returns boolean
+#### CheckCollisionCircles
+Checks for a collision between two circles.
+```sh
+local collision = CheckCollisionCircles(x1, y1, raduis1, x2, y2, raduis2)
+```
+- returns boolean
+#### CheckCollisionPointRec
+Checks for a collision between a point and a rectangle.
+```sh
+local collision = CheckCollisionRecs(px,py, x, y, width, height)
+```
+- returns boolean
+### QOL
+#### CreateVector2
+```sh
+local vector = CreateVector2(x, y)
+```
+Creates a new Vector2 object.
 # Fantasy-Console
 ## Tiles
 ### InitializeTileMap
