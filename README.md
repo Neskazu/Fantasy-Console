@@ -32,6 +32,33 @@ Every call Renders the entire tile map on the screen.
 RenderTileMap()
 ```
 ### Textures
+#### LoadTexture
+Loads a texture from Resources folder.
+```sh
+LoadTexture("Resources/texture.png")
+```
+#### DrawTexture
+Draws a texture on the screen at the specified coordinates and dimensions.
+```sh
+DrawTexture(id, x, y, srcWidth, srcHeight, rotation)
+DrawTexture(id, srcX, srcY, dstX, dstY, srcWidth, srcHeight, dstWidth, dstHeight, rotation, colorId)
+```
+### Input
+#### GetVirtualJoystick
+Retrieves the virtual joystick buttons state.
+```sh
+  local buttonLeft, buttonRight, buttonUp, buttonDown, buttonX, buttonB, buttonY, buttonA = GetVirtualJoystick()
+```
+#### GetVirtualMouse
+Retrieves the state of the virtual mouse.
+```sh
+local Mouse.x, Mouse.y, buttonLeft, buttonRight = GetVirtualMouse()
+```
+#### GetDeltaTime
+Gets the time elapsed since the last frame.
+```sh
+local deltaTime = GetDeltaTime()
+```
 
 # Fantasy-Console
 ## Tiles
