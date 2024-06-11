@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryControllerLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\MemoryControllerLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\GraphicLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\GraphicLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\GraphicLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\GraphicLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryControllerLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\MemoryControllerLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\ControlsLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\ControlsLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\ControlsLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\ControlsLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\UserDataLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\UserDataLua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\UserDataLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\UserDataLua.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\Colors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6277762E-200C-4150-9BC1-9F13C2E376CB}|Fantasy Console\\Fantasy Console.vcxproj|solutionrelative:Fantasy Console\\Colors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\Main.cpp",
+              "RelativeDocumentMoniker": "Fantasy Console\\Main.cpp",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\Main.cpp",
+              "RelativeToolTip": "Fantasy Console\\Main.cpp",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAABUAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-02T12:52:10.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemoryControllerLua.cpp",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryControllerLua.cpp",
+              "RelativeDocumentMoniker": "Fantasy Console\\MemoryControllerLua.cpp",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryControllerLua.cpp",
+              "RelativeToolTip": "Fantasy Console\\MemoryControllerLua.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-11T06:24:19.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDataLua.h",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\UserDataLua.h",
+              "RelativeDocumentMoniker": "Fantasy Console\\UserDataLua.h",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\UserDataLua.h",
+              "RelativeToolTip": "Fantasy Console\\UserDataLua.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-11T06:21:44.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MemoryControllerLua.h",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryControllerLua.h",
+              "RelativeDocumentMoniker": "Fantasy Console\\MemoryControllerLua.h",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryControllerLua.h",
+              "RelativeToolTip": "Fantasy Console\\MemoryControllerLua.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-11T06:20:20.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDataLua.cpp",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\UserDataLua.cpp",
+              "RelativeDocumentMoniker": "Fantasy Console\\UserDataLua.cpp",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\UserDataLua.cpp",
+              "RelativeToolTip": "Fantasy Console\\UserDataLua.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-05T08:00:04.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphicLua.h",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\GraphicLua.h",
+              "RelativeDocumentMoniker": "Fantasy Console\\GraphicLua.h",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\GraphicLua.h",
+              "RelativeToolTip": "Fantasy Console\\GraphicLua.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-05T07:36:01.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ControlsLua.h",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\ControlsLua.h",
+              "RelativeDocumentMoniker": "Fantasy Console\\ControlsLua.h",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\ControlsLua.h",
+              "RelativeToolTip": "Fantasy Console\\ControlsLua.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-03T13:41:49.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MemoryPool.h",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryPool.h",
+              "RelativeDocumentMoniker": "Fantasy Console\\MemoryPool.h",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryPool.h",
+              "RelativeToolTip": "Fantasy Console\\MemoryPool.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-03T13:25:08.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GraphicLua.cpp",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\GraphicLua.cpp",
+              "RelativeDocumentMoniker": "Fantasy Console\\GraphicLua.cpp",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\GraphicLua.cpp",
+              "RelativeToolTip": "Fantasy Console\\GraphicLua.cpp",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAIwKAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-02T18:08:33.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemoryPool.cpp",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryPool.cpp",
+              "RelativeDocumentMoniker": "Fantasy Console\\MemoryPool.cpp",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\MemoryPool.cpp",
+              "RelativeToolTip": "Fantasy Console\\MemoryPool.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-11T06:30:19.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Colors.h",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\Colors.h",
+              "RelativeDocumentMoniker": "Fantasy Console\\Colors.h",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\Colors.h",
+              "RelativeToolTip": "Fantasy Console\\Colors.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-03T07:14:03.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ControlsLua.cpp",
+              "DocumentMoniker": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\ControlsLua.cpp",
+              "RelativeDocumentMoniker": "Fantasy Console\\ControlsLua.cpp",
+              "ToolTip": "C:\\Users\\erikf\\source\\repos\\Fantasy Console\\Fantasy Console\\ControlsLua.cpp",
+              "RelativeToolTip": "Fantasy Console\\ControlsLua.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-02T12:39:27.754Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
