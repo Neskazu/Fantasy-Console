@@ -5,7 +5,7 @@
 namespace Colors {
     // Base colors
     static const Color baseColors[] = {
-        LIGHTGRAY, GRAY, DARKGRAY, YELLOW,
+       WHITE, BLACK, GRAY, YELLOW,
         GOLD, ORANGE, PINK, RED, MAROON,
         GREEN, LIME, DARKGREEN, SKYBLUE,
         BLUE, DARKBLUE, PURPLE

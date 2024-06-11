@@ -14,7 +14,7 @@ MemoryPool::~MemoryPool()
     delete[] memoryBlock;
 }
 
-MemoryPool* MemoryPool::getInstance(int size)
+MemoryPool* MemoryPool::GetInstance(int size)
 {
     if (!instance)
     {

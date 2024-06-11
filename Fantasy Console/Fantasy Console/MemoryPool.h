@@ -9,7 +9,7 @@ private:
     MemoryPool(int size);
 public:
     ~MemoryPool();
-    static MemoryPool* getInstance(int size);
+    static MemoryPool* GetInstance(int size);
 
     template <typename T>
     T* Allocate(void* address, int count = 1) {

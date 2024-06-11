@@ -7,6 +7,7 @@
 #include "ControlsLua.h"
 #include "UserDataLua.h"
 #include "PhysicLua.h"
+#include "MemoryControllerLua.h"
 #include "thread"
 
 std::string currentLuaFile = "main.lua";
@@ -15,27 +16,35 @@ void InitializeLua()
 {
     // Init lua + lua func
     lua.Init();
-    lua.Reg_function(LuaInitializeTileMap, "InitializeTileMap"); // Func register
-    lua.Reg_function(LuaSetTile, "SetTile");
-    lua.Reg_function(LuaRenderTileMap, "RenderTileMap");
-    lua.Reg_function(LuaLoadTexture, "LoadTexture");
-    lua.Reg_function(LuaDrawTexture, "DrawTexture");
+    // Func register
+    lua.Reg_function(LuaGetMemoryBlock, "GetMemoryBlock");
+    lua.Reg_function(LuaGetMemoryPoolInstance, "GetMemoryPoolInstance");
+    lua.Reg_function(LuaSetMemoryBlock, "SetMemoryBlock");
     lua.Reg_function(LuaGetVirtualJoystick, "GetVirtualJoystick");
     lua.Reg_function(LuaGetVirtualMouse, "GetVirtualMouse");
     lua.Reg_function(LuaGetDeltaTime, "GetDeltaTime");
     lua.Reg_function(LuaCreateVector2, "CreateVector2");
+    //graphic
+    lua.Reg_function(LuaSetTile, "SetTile");
+    lua.Reg_function(LuaDrawTexture, "DrawTexture");
+    lua.Reg_function(LuaLoadTexture, "LoadTexture");
+    lua.Reg_function(LuaRenderTileMap, "RenderTileMap");
+    lua.Reg_function(LuaInitializeTileMap, "InitializeTileMap"); 
     lua.Reg_function(LuaDrawTriangle, "DrawTriangle");
+    lua.Reg_function(LuaDrawCircle, "DrawCircle");
+    lua.Reg_function(LuaDrawRectangle, "DrawRectangle");
+    lua.Reg_function(LuaDrawText, "DrawText");
     lua.Reg_function(LuaCheckCollisionRecs, "CheckCollisionRecs");
     lua.Reg_function(LuaCheckCollisionCircles, "CheckCollisionCircles");
     lua.Reg_function(LuaCheckCollisionPointRec, "CheckCollisionPointRec");
     //Metatable for userData
-    lua.Reg_metatable(lua.GetLuaState(), LuaGetVector2, "Vector2MetaTable", "get");
-    lua.Reg_metatable(lua.GetLuaState(), LuaSetVector2, "Vector2MetaTable", "set");
+    lua.Reg_metatable(lua.GetLuaState(), LuaGetVector2, "Vector2MetaTable", "Get");
+    lua.Reg_metatable(lua.GetLuaState(), LuaSetVector2, "Vector2MetaTable", "Set");
 }
 void GameLoop(const string& luaFile)
 {
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+    const int screenWidth = 768;
+    const int screenHeight = 768;
 
     //Init Controls
     Controls* controls = Controls::getInstance();
@@ -94,7 +103,8 @@ int main(int argc, char* argv[])
 {
      //Init memorypool
     const int poolSize = 40096;
-    MemoryPool* memoryPool = MemoryPool::getInstance(poolSize);
+    MemoryPool* memoryPool = MemoryPool::GetInstance(poolSize);
+    char* baseAddress = memoryPool->GetMemoryBlock();
     thread inputThread(ProcessConsoleCommands);
 
     
@@ -106,10 +116,11 @@ int main(int argc, char* argv[])
         }
     }
 
-    //for (int i = 30005; i < 34096; i += 1)
-    //{
-    //    // baseAddress[i] = i;
-    //}
+    for (int i = 0; i < 40096; i += 1)
+    {
+        baseAddress[i] = 0;
+        cout << i;
+    }
     
     inputThread.join();
 

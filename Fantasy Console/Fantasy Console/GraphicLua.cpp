@@ -1,9 +1,8 @@
 #include "GraphicLua.h"
 
 //const values
-const int gridSize = 32; // tilemap size 
+const int gridSize = 48; // tilemap size 
 const int tileSize = 16; // tile size x,y
-const int tileSetSize = 16;//tiles in row collumn
 //tiles
 struct Tile {
     int tileId;
@@ -23,7 +22,7 @@ Rectangle dstRect = { 0, 0, 0, 0 };
 Vector2 pos = { 0, 0 };
 
 //memory pool
-MemoryPool* memoryPool = MemoryPool::getInstance(40096);
+MemoryPool* memoryPool = MemoryPool::GetInstance(40096);
 
 int LuaDrawText(lua_State* L)
 {
@@ -47,7 +46,6 @@ int LuaLoadTexture(lua_State* L)
     Image image = LoadImage(("Resources/" + path).c_str());     // Loaded in CPU memory (RAM)
     Texture2D texture = LoadTextureFromImage(image);          // Image converted to texture, GPU memory (VRAM)
 
-
     textures = memoryPool->Allocate<Texture2D>(targetAddress);
     textures[textureId] = texture;
     textureId++;
@@ -60,7 +58,7 @@ int LuaLoadTexture(lua_State* L)
 int LuaDrawTexture(lua_State* L)
 {
     int num_args = lua_gettop(L);//get args count 
-    if (num_args == 6)
+    if (num_args == 6||num_args == 7)
     {
         int id = luaL_checkinteger(L, 1);// Get args from lua
         float x = luaL_checknumber(L, 2);
@@ -68,6 +66,7 @@ int LuaDrawTexture(lua_State* L)
         int srcWidth = luaL_checkinteger(L, 4);
         int srcHeight = luaL_checkinteger(L, 5);
         int rotation = luaL_checkinteger(L, 6);
+        int colorId = luaL_optinteger(L, 7, 0);
         //fill rects and vectors
         dstRect.x = x;
         dstRect.y = y;
@@ -84,7 +83,7 @@ int LuaDrawTexture(lua_State* L)
             dstRect,
             pos,
             rotation,
-            WHITE
+            Colors::baseColors[colorId]
         );
     }
     if (num_args==11)

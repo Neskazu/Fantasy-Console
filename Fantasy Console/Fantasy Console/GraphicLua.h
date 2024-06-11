@@ -16,9 +16,3 @@ int LuaDrawTriangle(lua_State* L);
 int LuaDrawCircle(lua_State* L);
 int LuaDrawRectangle(lua_State* L);
 int LuaDrawText(lua_State* L);
-/*
-
-int LuaPlaceSprite(lua_State* L);
-int LuaPlaceTile(lua_State* L);
-int LuaDrawPixel(lua_State* L);
-*/
